@@ -1,0 +1,53 @@
+{
+    "menu": {
+        "item1": "Inicio",
+        "item2": "Sobre mí",
+        "item3": "Habilidades",
+        "item4": "Formación",
+        "item5": "Proyectos",
+        "item6": "Contacto"
+    },
+
+    "home": {
+        "home_text-1": "Hola! Soy",
+        "home_text-3": "Desarrollador Web Full - Stack",
+        "parrafo-info": "Estudiante de ingenieria de sistemas y programación guiado a la excelencia del Desarrollo Web Full Stack. Un apasionado a la tecnologia y el desarrollo, enfocado en crear proyectos ingeniosos, novedosos y esteticos que que brinden la mejor experiencia para el usuario y las empresas.",
+        "cv_button": "Descargar CV",
+        "contact_button": "Contactame"
+    },
+
+    "sobre-mi": {
+        "title": "Sobre mí",
+        "texto_sobreMi": "Soy estudiante del pregrado de ingenieria de sistemas y estudiante autodidacta de Desarrollo Web enfocado en programación Full Stack.<br>Guiado a aportar lo mejor de mi al mundo del Desarrollo Web, adquirir nuevas experiencias y conocimientos, fortaleciendo mi vida personal y profesional.<br><br>Mi motivación proviene de la creencia de que la tecnología puede ser una fuerza positiva para el cambio y la innovación. A lo largo de mi trayecto, he adquirido experiencia en áreas clave, como el desarrollo de aplicaciones web, la gestión de bases de datos, diseños UX/IU, code clear y la optimización de rendimiento.<br><br>Además de mi devoción por la programación, disfruto explorando nuevas tecnologías, resolviendo desafíos técnicos y aprendiendo de cada proyecto en el que trabajo. Creo firmemente en la importancia de la educación continua y el aprendizaje autodidacta en un campo en constante evolución como el desarrollo web."
+    },
+
+    "habilidades": {
+        "title": "Habilidades"
+    },
+
+    "formacion": {
+        "title": "Formación",
+        "formacion1": "Ingeniería de Sistemas",
+        "tiempo-formacion1": "2020 - En curso",
+        "formacion2": "Desarrollo web Full-Stack",
+        "tiempo-formacion2": "2023 - 2023",
+        "formacion3": "Técnico Profesional en Sistemas",
+        "tiempo-formacion3": "2019 - 2020"
+    },
+
+    "proyectos": {
+        "title": "Proyectos",
+        "title-proyecto1": "Clon de Pinterest",
+        "info-proyecto1": "El proyecto es un homenaje a la popular plataforma Pinterest, diseñado para ofrecerte la misma experiencia intuitiva y cautivadora que tanto nos gusta del layout de imagenes de esta facinante página web",
+        "title-proyecto2": "Virtual ATM",
+        "info-proyecto2": "Experimenta la simulación de un cajero interactivo mediante HTML, CSS y JS. Consulta, retira e ingresa saldos y disfruta de una experiencia financiera envolvente.",
+        "title-proyecto3": "Pokedex Pokemon",
+        "info-proyecto3": "La Pokédex es una aplicación web interactiva que Consume la API de Pokémon y te permite explorar y obtener información detallada, precisa y actualizada sobre cada Pokémon."
+    },
+
+    "contacto": {
+        "title": "Contacto",
+        "text": "Completa el siguiente formulario y me pondré en contacto contigo lo antes posible.",
+        "btn-enviar": "Enviar"
+    }
+}

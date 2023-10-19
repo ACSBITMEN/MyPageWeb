@@ -1,0 +1,53 @@
+{
+    "menu": {
+        "item1": "Home",
+        "item2": "About me",
+        "item3": "Skills",
+        "item4": "Training",
+        "item5": "Projects",
+        "item6": "Contact"
+    },
+
+    "home": {
+        "home_text-1": "Hi! I'm",
+        "home_text-3": "Full - Stack Web Developer",
+        "parrafo-info": "Systems engineering and programming student guided to excellence in Full Stack Web Development. Passionate about technology and development, focused on creating ingenious, innovative and aesthetic projects that provide the best experience to users and companies.",
+        "cv_button": "Download CV",
+        "contact_button": "ontact me"
+    },
+
+    "sobre-mi": {
+        "title": "About me",
+        "texto_sobreMi": "I'm an undergraduate student of systems engineering and a self-taught student of Web Development focused on Full Stack programming.<br>Guided to contribute the best of myself to the world of Web Development, acquire new experiences and knowledge, my personal and professional life.<br><br>My motivation comes from the belief that technology can be a positive force for change and innovation. Throughout my career, I have gained experience in key areas such as web application development, database management, UX/UI designs, code cleanup and performance optimization.<br><br>In addition to my devotion to programming, I enjoy exploring new technologies. , solving technical challenges and learning from each project I work on. I firmly believe in the importance of continuous training and self-taught learning in a constantly evolving field such as web development."
+    },
+
+    "habilidades": {
+        "title": "Skills"
+    },
+
+    "formacion": {
+        "title": "Training",
+        "formacion1": "Systems engineer",
+        "tiempo-formacion1": "2020 - In progress",
+        "formacion2": "Full-Stack Developer",
+        "tiempo-formacion2": "2023 - 2023",
+        "formacion3": "Professional Systems Technician",
+        "tiempo-formacion3": "2019 - 2020"
+    },
+
+    "proyectos": {
+        "title": "Projects",
+        "title-proyecto1": "Pinterest clone",
+        "info-proyecto1": "The project is a tribute to the popular Pinterest platform, designed to give you the same intuitive and engaging experience that we love so much about the image design of this fascinating website.",
+        "title-proyecto2": "Virtual ATM",
+        "info-proyecto2": "Experience an interactive ATM simulation using HTML, CSS and JS. Check, withdraw and enter balances and enjoy an immersive financial experience.",
+        "title-proyecto3": "Pokedex Pokemon",
+        "info-proyecto3": "The Pokédex is an interactive web application that consumes the Pokémon API and allows you to explore and obtain detailed, accurate and up-to-date information about each Pokémon."
+    },
+
+    "contacto": {
+        "title": "Contact",
+        "text": "Complete the form below and I will contact you as soon as possible.",
+        "btn-enviar": "Send"
+    }
+}
