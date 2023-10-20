@@ -644,6 +644,7 @@ img.logo-sena {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -1029,3 +1030,17 @@ footer {
         height: 6rem;
     }
 }
+
+/* Tamaño responsivo para moviles */
+
+@media (max-width: 430px) {
+    .card {
+        min-width: 18rem;
+        max-width: 35rem;
+    }
+
+    .container_btn--proyectos a{
+        display: inline-block;
+        margin: 0 .5rem;
+    }
+  }
