@@ -481,6 +481,8 @@ span+span {
     background-color: var(--jet);
     width: 100%;
     height: auto;
+    border-top: 3px solid var(--jet);
+    border-bottom: 3px solid var(--jet);
 }
 
 .habilidades h1 {
@@ -1034,9 +1036,14 @@ footer {
 /* Tamaño responsivo para moviles */
 
 @media (max-width: 430px) {
+    .cards_container--proyectos {
+        margin: 0;
+    }
+
     .card {
-        min-width: 18rem;
+        min-width: 15rem;
         max-width: 35rem;
+        margin: 0 .5rem 2rem 0;
     }
 
     .container_btn--proyectos a{
