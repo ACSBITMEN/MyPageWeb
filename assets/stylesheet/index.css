@@ -909,7 +909,7 @@ img.logo-sena {
 
 .glass-effect {
     background: rgba(255, 255, 255, 0.3); /* Color de fondo translúcido */
-    backdrop-filter: blur(2px); /* Aplicar desenfoque al fondo */
+    backdrop-filter: blur(3px); /* Aplicar desenfoque al fondo */
     border: 1px solid rgba(255, 255, 255, 0.2); /* Borde con transparencia */
     text-align: center;
 }
