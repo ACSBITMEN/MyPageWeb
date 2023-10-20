@@ -801,10 +801,8 @@ img.logo-sena {
 
 .container--contacto {
     width: 100%;
-    background-color: var(--main-color);
     border-radius: 24px;
     padding: 3rem;
-    position: relative;
 }
 
 .container_text--contacto {
@@ -813,8 +811,9 @@ img.logo-sena {
 
 .container_text--contacto p {
     font-size: 1.6rem;
+    font-weight: 800;
     font-family: 'Cooper Hewitt';
-    color: black;
+    color: var(--light-grey);
     margin-bottom: 3rem;
     letter-spacing: 1px;
     line-height: 2.3rem;
@@ -823,11 +822,11 @@ img.logo-sena {
 .form-contact input {
     font-family: 'Cooper Hewitt';
     background: transparent;
-    border: 1px solid black;
+    border: 1px solid var(--light-grey);
     width: 100%;
     padding: 1rem;
     border-radius: 1rem;
-    color: black;
+    color: var(--white);
     font-size: 1.6rem;
     outline: none;
     margin-bottom: 2rem;
@@ -835,7 +834,7 @@ img.logo-sena {
 }
 
 .form-contact input::placeholder {
-    color: black;
+    color: var(--light-grey);
 }
 
 .form-contact .input-invalid {
@@ -845,12 +844,12 @@ img.logo-sena {
 
 .form-contact textarea {
     background: transparent;
-    border: 1px solid black;
+    border: 1px solid var(--light-grey);
     font-family: 'Cooper Hewitt';
     width: 100%;
     padding: 1rem;
     border-radius: 1rem;
-    color: black;
+    color: var(--white);
     font-size: 1.6rem;
     outline: none;
     margin-bottom: 3rem;
@@ -859,7 +858,7 @@ img.logo-sena {
 }
 
 .form-contact textarea::placeholder {
-    color: black;
+    color: var(--light-grey);
 }
 
 .form-contact textarea::-webkit-scrollbar {
@@ -882,7 +881,7 @@ img.logo-sena {
 }
 
 .btn_form--contacto button {
-    background: #17243a;
+    background: var(--jet);
     border: none;
     font-family: 'Cooper Hewitt';
     width: 20rem;
@@ -896,7 +895,7 @@ img.logo-sena {
 }
 
 .btn_form--contacto button:hover {
-    background: #17243a;
+    background: var(--main-color);
     color: var(--white);
     font-weight: bold;
     transform: scale(1.1);
@@ -906,6 +905,13 @@ img.logo-sena {
 
 .btn_form--contacto button:active {
     background: #574438;
+}
+
+.glass-effect {
+    background: rgba(255, 255, 255, 0.3); /* Color de fondo translúcido */
+    backdrop-filter: blur(2px); /* Aplicar desenfoque al fondo */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borde con transparencia */
+    text-align: center;
 }
 
 /* Footer */
@@ -1050,4 +1056,4 @@ footer {
         display: inline-block;
         margin: 0 .5rem;
     }
-  }
+}
