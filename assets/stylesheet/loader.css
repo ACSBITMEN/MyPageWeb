@@ -30,7 +30,7 @@ html {
 }
 
 .loader {
-    color: var(--beaver);
+    color: var(--main-color);
     font-size: 13px;
     position: relative;
     animation-delay: -0.16s;

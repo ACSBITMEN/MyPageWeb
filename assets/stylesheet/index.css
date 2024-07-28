@@ -4,53 +4,51 @@
     url('../fonts/CooperHewitt-Thin.woff') format('woff');
 }
 
-:root {
-    --white: #f2f2f2;
-    --light-grey: #D9D9D9;
-    --beaver: #FFB000;
-    --main-color: #FFB000;
-    --black: #111111;
-    --eerie-black: #213555;
-    --jet: #17243a;
+html {
+    font-size: 62.5%;
+    scrollbar-width: thin;
+    scrollbar-color: var(--main-color) var(--background-space);
+    scroll-behavior: smooth;
+}
+/*Configuracion del Scroll*/
+html::-webkit-scrollbar {
+    width: 8px;
+}
+html::-webkit-scrollbar-track {
+    background-color: var(--background-space);
+}
+html::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);;
+}
+/*Configuracion del fondo selecionado*/
+::selection {
+    background-color: #9bfc7d48;
 }
 
+/*Variables de Paleta de colores para el Tema de la pagina*/
+:root {
+    --main-color: #c8ff00;
+    --background-space: #213555;
+    --background-space-two: #17243a;
+    --black: #111111;
+    --white: #f2f2f2;
+    --light-grey: #D9D9D9;
+}
+
+/*Configuraciones generales*/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-html {
-    font-size: 62.5%;
-    scrollbar-width: thin;
-    scrollbar-color: var(--main-color) var(--eerie-black);
-    scroll-behavior: smooth;
-}
-
-html::-webkit-scrollbar {
-    width: 8px;
-}
-
-html::-webkit-scrollbar-track {
-    background-color: var(--eerie-black);
-}
-
-
-html::-webkit-scrollbar-thumb {
-    background-color: var(--main-color);;
-}
-
-::selection {
-    background-color: #776254;
-}
 
 /* Header */
-
 .header {
-    background-color: var(--jet);
+    background-color: var(--background-space-two);
     padding: .8rem 3rem;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     position: fixed;
     width: 100%;
@@ -59,17 +57,20 @@ html::-webkit-scrollbar-thumb {
     z-index: 1;
     transition: .5s;
 }
-
 .header.abajo {
     backdrop-filter: blur(15px);
     background: rgba(41,41,41,.3);
 }
-
 .header .logo__header {
     width: 4.5rem;
 }
 
+/* Barra de navegacion*/
+nav.nav_menu {
+    display: flex;
+}
 nav.nav_menu.active {
+    background-color: var(--background-space);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,12 +80,9 @@ nav.nav_menu.active {
     top: 6.3rem;
     width: 100%;
     height: auto;
-    background-color: var(--eerie-black);
     box-shadow: 0 10px 16px -6px rgb(5 5 5 / 30%), 0 25px 10px -24px rgb(5 5 5 / 10%);
     animation: ease .4s left forwards;
-}
-
-@keyframes left {
+} @keyframes left {
     0% {
         left: 100%;
     }
@@ -92,7 +90,6 @@ nav.nav_menu.active {
         left: 0;
     }
 }
-
 nav.nav_menu.active a {
     padding: 2rem;
     font-family: 'Cooper Hewitt';
@@ -103,17 +100,14 @@ nav.nav_menu.active a {
     width: 100%;
     text-align: center;
 }
-
 nav.nav_menu.active a:hover {
     color: var(--main-color);
-    background-color: var(--jet);
+    background-color: var(--background-space-two);
     transition: all .4s;
 }
-
 nav.nav_menu.not-active a {
     display: none;
 }
-
 nav.nav_menu.active .flags {
     /* width: 12rem; */
     display: flex;
@@ -121,7 +115,6 @@ nav.nav_menu.active .flags {
     align-items: center;
     margin: 1rem 0;
 }
-
 nav.nav_menu.active .flags__item {
     width: 5rem;
     height: 5rem;
@@ -129,12 +122,10 @@ nav.nav_menu.active .flags__item {
     filter: contrast(85%);
     cursor: pointer;
 }
-
 nav.nav_menu.active .flags__item img {
     max-width: 100%;
     height: auto;
 }
-
 nav.nav_menu.not-active .flags {
     display: none;
 }
@@ -279,9 +270,7 @@ span+span {
     box-shadow: -42vw -4vh 0px 0px #fff,25vw -41vh 0px 0px #fff,-20vw 49vh 0px 1px #fff,5vw 40vh 1px 1px #fff,29vw 19vh 1px 0px #fff,-44vw -13vh 0px 0px #fff,46vw 41vh 0px 1px #fff,-3vw -45vh 0px 1px #fff,47vw 35vh 1px 0px #fff,12vw -8vh 1px 0px #fff,-34vw 48vh 1px 1px #fff,32vw 26vh 1px 1px #fff,32vw -41vh 1px 1px #fff,0vw 37vh 1px 1px #fff,34vw -26vh 1px 0px #fff,-14vw -49vh 1px 0px #fff,-12vw 45vh 0px 1px #fff,-44vw -33vh 0px 1px #fff,-13vw 41vh 0px 0px #fff,-36vw -11vh 0px 1px #fff,-23vw -24vh 1px 0px #fff,-38vw -27vh 0px 1px #fff,16vw -19vh 0px 0px #fff,28vw 33vh 1px 0px #fff,-49vw -4vh 0px 0px #fff,16vw 32vh 0px 1px #fff,36vw -18vh 1px 0px #fff,-25vw -30vh 1px 0px #fff,-23vw 24vh 0px 1px #fff,-2vw -35vh 1px 1px #fff,-25vw 9vh 0px 0px #fff,-15vw -34vh 0px 0px #fff,-8vw -19vh 1px 0px #fff,-20vw -20vh 1px 1px #fff,42vw 50vh 0px 1px #fff,-32vw 10vh 1px 0px #fff,-23vw -17vh 0px 0px #fff,44vw 15vh 1px 0px #fff,-40vw 33vh 1px 1px #fff,-43vw 8vh 0px 0px #fff,-48vw -15vh 1px 1px #fff,-24vw 17vh 0px 0px #fff,-31vw 50vh 1px 0px #fff,36vw -38vh 0px 1px #fff,-7vw 48vh 0px 0px #fff,15vw -32vh 0px 0px #fff,29vw -41vh 0px 0px #fff,2vw 37vh 1px 0px #fff,7vw -40vh 1px 1px #fff,15vw 18vh 0px 0px #fff,25vw -13vh 1px 1px #fff,-46vw -12vh 1px 1px #fff,-18vw 22vh 0px 0px #fff,23vw -9vh 1px 0px #fff,50vw 12vh 0px 1px #fff,45vw 2vh 0px 0px #fff,14vw -48vh 1px 0px #fff,23vw 43vh 0px 1px #fff,-40vw 16vh 1px 1px #fff,20vw -31vh 0px 1px #fff,-17vw 44vh 1px 1px #fff,18vw -45vh 0px 0px #fff,33vw -6vh 0px 0px #fff,0vw 7vh 0px 1px #fff,-10vw -18vh 0px 1px #fff,-19vw 5vh 1px 0px #fff,1vw 42vh 0px 0px #fff,22vw 48vh 0px 1px #fff,39vw -8vh 1px 1px #fff,-6vw -42vh 1px 0px #fff,-47vw 34vh 0px 0px #fff,-46vw 19vh 0px 1px #fff,-12vw -32vh 0px 0px #fff,-45vw -38vh 0px 1px #fff,-28vw 18vh 1px 0px #fff,-38vw -46vh 1px 1px #fff,49vw -6vh 1px 1px #fff,-28vw 18vh 1px 1px #fff,10vw -24vh 0px 1px #fff,-5vw -11vh 1px 1px #fff,33vw -8vh 1px 0px #fff,-16vw 17vh 0px 0px #fff,18vw 27vh 0px 1px #fff,-8vw -10vh 1px 1px #fff;
     box-shadow: 24vw 9vh 1px 0px #fff,12vw -24vh 0px 1px #fff,-45vw -22vh 0px 0px #fff,-37vw -40vh 0px 1px #fff,29vw 19vh 0px 1px #fff,4vw -8vh 0px 1px #fff,-5vw 21vh 1px 1px #fff,-27vw 26vh 1px 1px #fff,-47vw -3vh 1px 1px #fff,-28vw -30vh 0px 1px #fff,-43vw -27vh 0px 1px #fff,4vw 22vh 1px 1px #fff,36vw 23vh 0px 0px #fff,-21vw 24vh 1px 1px #fff,-16vw 2vh 1px 0px #fff,-16vw -6vh 0px 0px #fff,5vw 26vh 0px 0px #fff,-34vw 41vh 0px 0px #fff,1vw 42vh 1px 1px #fff,11vw -13vh 1px 1px #fff,48vw -8vh 1px 0px #fff,22vw -15vh 0px 0px #fff,45vw 49vh 0px 0px #fff,43vw -27vh 1px 1px #fff,20vw -2vh 0px 0px #fff,8vw 22vh 0px 1px #fff,39vw 48vh 1px 1px #fff,-21vw -11vh 0px 1px #fff,-40vw 45vh 0px 1px #fff,11vw -30vh 1px 0px #fff,26vw 30vh 1px 0px #fff,45vw -29vh 0px 1px #fff,-2vw 18vh 0px 0px #fff,-29vw -45vh 1px 0px #fff,-7vw -27vh 1px 1px #fff,42vw 24vh 0px 0px #fff,45vw -48vh 1px 0px #fff,-36vw -18vh 0px 0px #fff,-44vw 13vh 0px 1px #fff,36vw 16vh 0px 1px #fff,40vw 24vh 0px 0px #fff,18vw 11vh 0px 0px #fff,-15vw -23vh 1px 0px #fff,-24vw 48vh 0px 1px #fff,27vw -45vh 1px 0px #fff,-2vw -24vh 0px 1px #fff,-15vw -28vh 0px 0px #fff,-43vw 13vh 1px 0px #fff,7vw 27vh 1px 0px #fff,47vw 5vh 0px 0px #fff,-45vw 15vh 1px 1px #fff,-5vw -28vh 0px 1px #fff,38vw 25vh 1px 1px #fff,-39vw -1vh 1px 0px #fff,5vw 0vh 1px 0px #fff,49vw 13vh 0px 0px #fff,48vw 10vh 0px 1px #fff,19vw -28vh 0px 0px #fff,4vw 7vh 0px 0px #fff,21vw 21vh 1px 1px #fff,-15vw -15vh 0px 1px #fff,-6vw -42vh 1px 0px #fff,-15vw 48vh 1px 1px #fff,-23vw 25vh 1px 1px #fff,-48vw 25vh 0px 1px #fff,-31vw -19vh 0px 1px #fff,4vw 37vh 1px 1px #fff,-43vw 28vh 0px 0px #fff,3vw -25vh 0px 1px #fff,-39vw 14vh 0px 1px #fff,-40vw 31vh 0px 1px #fff,35vw -36vh 1px 1px #fff,16vw 49vh 0px 0px #fff,6vw 39vh 0px 0px #fff,3vw -35vh 0px 1px #fff,-44vw -2vh 1px 0px #fff,-6vw 21vh 1px 0px #fff,48vw 9vh 1px 1px #fff,-43vw 30vh 1px 1px #fff,29vw -12vh 1px 1px #fff,-48vw 13vh 1px 0px #fff,-42vw 32vh 1px 1px #fff,34vw 15vh 1px 1px #fff,29vw -37vh 1px 1px #fff,28vw 2vh 0px 0px #fff;
     animation: zoom 16s alternate infinite; 
-}
-
-@keyframes zoom {
+} @keyframes zoom {
     0%{
         transform: scale(1);
     }
@@ -290,16 +279,15 @@ span+span {
     }
 }
 
-/* Home */
 
+/* Home */
 .home {
-    background-color: var(--jet);
+    background-color: var(--background-space-two);
     width: 100%;
     height: auto;
 }
 
 .container_image-home {
-    width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -311,9 +299,7 @@ span+span {
     transition: .4s;
     animation: image 2s;
     animation: float-Astronauta 3.7s ease-in-out infinite;
-}
-
-@keyframes float-Astronauta {
+} @keyframes float-Astronauta {
     0% {
         transform: translateY(0);
     }
@@ -366,7 +352,7 @@ span+span {
     position: absolute;
     right: 0;
     color: var(--main-color);
-    background-color: var(--jet);
+    background-color: var(--background-space-two);
     width: 100%;
     animation: typing 3s steps(28) alternate infinite;
 }
@@ -385,10 +371,10 @@ span+span {
     background-color: var(--main-color);
     border-radius: 3rem;
     padding: .6rem 2rem .5rem 2rem;
-    color: var(--jet);
+    color: var(--background-space-two);
     font-family: 'Cooper Hewitt';
     font-weight: bold;
-    font-size: 1.6rem;
+    font-size: 1.5em;
     text-transform: uppercase;
     letter-spacing: .1rem;
     margin: 2rem 0;
@@ -403,11 +389,11 @@ span+span {
 .links {
     display: flex;
     justify-content: center;
-    padding: 2rem 0 6rem 0;
+    padding: 2rem 0 0 0;
 }
 
 .links img {
-    width: 2.4rem;
+    width: 4rem;
     margin: 0 .5rem;
 }
 
@@ -419,7 +405,7 @@ span+span {
 /* Sobre mí */
 
 .sobreMi {
-    background-color: var(--eerie-black);
+    background-color: var(--background-space);
     width: 100%;
     height: auto;
 }
@@ -431,7 +417,7 @@ span+span {
     font-family: 'Cooper Hewitt';
     font-size: 2.4rem;
     letter-spacing: .1rem;
-    padding-top: 6rem;
+    padding-top: 4rem;
 }
 
 .container_texto-sobreMi {
@@ -465,11 +451,10 @@ span+span {
     height: auto;
     display: flex;
     justify-content: center;
-    padding: 1rem 0;
 }
 
 .image_sobreMi {
-    width: 65%;
+    width: 100%;
     margin-bottom: 5rem;
     animation: float-Astronauta 3.7s ease-in-out infinite;
 }
@@ -478,11 +463,11 @@ span+span {
 /* Habilidades */
 
 .habilidades {
-    background-color: var(--jet);
+    background-color: var(--background-space-two);
     width: 100%;
     height: auto;
-    border-top: 3px solid var(--jet);
-    border-bottom: 3px solid var(--jet);
+    border-top: 3px solid var(--background-space-two);
+    border-bottom: 3px solid var(--background-space-two);
 }
 
 .habilidades h1 {
@@ -505,7 +490,7 @@ span+span {
 }
 
 .cards--habilidades {
-    background-color: var(--eerie-black);
+    background-color: var(--background-space);
     border-radius: 24px;
     display: flex;
     flex-direction: column;
@@ -523,7 +508,7 @@ span+span {
 .cards--habilidades img {
     margin-top: .7rem;
     width: 9rem;
-    filter: saturate(70%);
+    filter: saturate(0%);
 }
 
 .cards--habilidades:hover img {
@@ -541,7 +526,7 @@ span+span {
 /* Formación */
 
 .formacion {
-    background-color: var(--eerie-black);
+    background-color: var(--background-space-two);
     width: 100%;
     height: auto;
 }
@@ -565,14 +550,14 @@ span+span {
 }
 
 .cards--formacion {
-    background-color: var(--jet);
+    background-color: var(--background-space-two);
     border-radius: 24px;
     border: 1px solid #17243a;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 32rem;
+    width: 30rem;
     height: 33rem;
     margin: 0 1rem 2rem 1rem;
     padding: 1rem;
@@ -581,7 +566,9 @@ span+span {
 }
 
 .cards--formacion:hover {
-    border: 1px solid #FFB000;
+    border: 1px solid var(--main-color);
+    transition: .4s all;
+    cursor: pointer;
 }
 
 .cards--formacion img {
@@ -625,7 +612,7 @@ img.logo-sena {
 /* Proyectos */
 
 .proyectos {
-    background-color: var(--jet);
+    background-color: var(--background-space);
     width: 100%;
     height: auto;
     padding: 0 1rem 1rem 1rem;
@@ -650,7 +637,7 @@ img.logo-sena {
 }
 
 .card {
-    background-color: var(--eerie-black);
+    background-color: var(--background-space);
     border-radius: 20px;
     min-width: 33rem;
     max-width: 38rem;
@@ -662,7 +649,7 @@ img.logo-sena {
 
 .cards_container--proyectos .card:hover {
     transform: scale(1.05);
-    border: 1px solid #FFB000;
+    border: 1px solid var(--main-color);
     animation: float-Element 3s ease-in-out infinite;
 }
 
@@ -744,7 +731,7 @@ img.logo-sena {
     padding: .9rem 0;
     border: none;
     background-color: var(--main-color);
-    color: var(--eerie-black);
+    color: var(--background-space);
 }
 
 .btn_repo {
@@ -779,7 +766,7 @@ img.logo-sena {
 /* Contacto */
 
 .contacto {
-    background-color: var(--eerie-black);
+    background-color: var(--background-space-two);
     width: 100%;
     height: auto;
     padding: 0 2rem 5rem 2rem;
@@ -881,7 +868,7 @@ img.logo-sena {
 }
 
 .btn_form--contacto button {
-    background: var(--jet);
+    background: var(--background-space-two);
     border: none;
     font-family: 'Cooper Hewitt';
     width: 20rem;
@@ -917,11 +904,11 @@ img.logo-sena {
 /* Footer */
 
 footer {
-    background-color: var(--eerie-black);
+    background-color: var(--background-space);
 }
 
 .contianer--footer {
-    border-top: 1px solid var(--jet);
+    border-top: 1px solid var(--background-space-two);
     width: 90%;
     margin: 0 auto;
     padding-top: 2rem;
@@ -1005,7 +992,7 @@ footer {
     top: 48%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    color: var(--white);
+    color: var(--black);
     transition: .2s;
 }
 
