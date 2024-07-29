@@ -53,17 +53,6 @@ div.btn {
 }
 
 /* Home */
-
-.home {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    padding-bottom: 4rem;
-    height: 100vh;
-}
-
 .container_image-home {
     grid-area: 1 / 7 / 2 / 11;
 }
@@ -104,19 +93,6 @@ div.btn {
     letter-spacing: .2rem;
 }
 
-.container_parrafo-info {
-    display: inline-block;
-    text-align: start;
-}
-
-.container_parrafo-info p {
-    font-family: 'Cooper Hewitt';
-    color: var(--light-grey);
-    font-size: 1.4rem;
-    letter-spacing: 1px;
-    line-height: 2rem;
-}
-
 .container_button {
     display: flex;
 }
@@ -136,45 +112,8 @@ div.btn {
     transition: 1s transform;
 }
 
-.contact_button {
-    display: inline-block;
-    background-color: var(--main-color);
-    border-radius: 3rem;
-    padding: .7rem 4rem .6rem 4rem;
-    color: var(--background-space-two);
-    font-family: 'Cooper Hewitt';
-    font-weight: bold;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    margin: 2rem 0 2rem 1rem;
-    border: none;
-    cursor: pointer;
-    transition: .4s;
-}
-
-.contact_button:hover {
-    background-color: #ec6060;
-    box-shadow: 0px 2px 10px #141414;
-    transition: 1s transform;
-}
-
-.links {
-    width: 5%;
-    position: fixed;
-    top: 45rem;
-    left: 0;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-left: 1.5rem;
-}
-
 .links img {
     margin: .7rem 0;
-}
-
-.links img:hover {
-    background-color: #6085ec;
 }
 
 .links .icon-CodePen {
@@ -184,30 +123,11 @@ div.btn {
 /* Sobre Mí */
 
 .sobreMi {
-    height: 80vh;
-    padding-bottom: 4rem;
+    height: auto;
 }
 
 .sobreMi h1 {
-    margin-top: 2rem;
     font-size: 3rem;
-}
-
-.container_content-sobreMi {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
-
-.container_image-sobreMi {
-    grid-area: 1 / 3 / 2 / 6;
-}
-
-.container_texto-sobreMi {
-    grid-area: 1 / 6 / 2 / 11;
-    padding: 0 5% 0 3rem;
 }
 
 .title_sobreMi {
@@ -225,68 +145,13 @@ div.btn {
 
 /* Habilidades */
 
-.habilidades {
-    padding-bottom: 8rem;
-}
 
-.habilidades h1 {
-    padding-top: 8rem;
-    font-size: 3rem;
-}
-
-
-.cards_container--habilidades {
-    grid-template-columns: 13rem 13rem 13rem 13rem;
-    grid-template-rows: 14rem 14rem;
-    padding: 0;
-    margin-top: 2rem;
-}
-
-.cards--habilidades:hover {
-    filter: saturate(100%);
-    border: 1px solid var(--main-color);
-    transition: all 1s;
-}
-
-.cards--habilidades p {
-    font-size: 1.6rem;
-    margin-top: .8rem;
-}
 
 /* Formación */
-
-.formacion {
-    padding-bottom: 2rem;
-}
 
 .formacion h1 {
     padding-top: 8rem;
     font-size: 3rem;
-}
-
-.cards_container--formacion {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
-
-.cards--formacion:nth-child(1) {
-    grid-area: 1 / 3 / 2 / 5;
-}
-
-.cards--formacion:nth-child(2) {
-    grid-area: 1 / 5 / 2 / 7;
-}
-
-.cards--formacion:nth-child(3) {
-    grid-area: 1 / 7 / 2 / 9;
-}
-
-.cards--formacion:hover {
-    box-shadow: 0 10px 16px -6px rgb(5 5 5 / 30%), 0 25px 10px -24px rgb(5 5 5 / 10%);
-    transform: scale(1.1);
 }
 
 /* Proyectos */
