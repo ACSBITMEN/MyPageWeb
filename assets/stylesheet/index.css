@@ -28,8 +28,8 @@ html::-webkit-scrollbar-thumb {
 /*Variables de Paleta de colores para el Tema de la pagina*/
 :root {
     --main-color: #c8ff00; /*c8ff00  00ffbf*/
-    --background-space: #1a2942;
-    --background-space-two: #17243a;
+    --background-space: #162238;
+    --background-space-two: #131d2e;
     --black: #111111;
     --white: #f2f2f2;
     --light-grey: #D9D9D9;
@@ -329,6 +329,7 @@ main {
 }
 
 .home_text-1 {
+    display: none;
     font-family: 'Cooper Hewitt';
     color: var(--white);
     font-size: 2rem;
@@ -336,15 +337,16 @@ main {
 
 .home_text-2 {
     font-family: 'PT Sans';
-    color: var(--main-color);
-    font-size: 3.2rem;
+    color: var(--white);
+    font-size: 6rem;
+    font-weight: bold;
     margin-bottom: 1rem;
 }
 
 .home_text-3 {
     font-family: 'Cooper Hewitt';
-    color: var(--white);
-    font-size: 1.4rem;
+    color: var(--main-color);
+    font-size: clamp(1.4em, 1vw + .5em, 10em);
     text-transform: uppercase;
     letter-spacing: .2rem;
     width: 28rem;
@@ -377,7 +379,7 @@ main {
 .container_parrafo-info p {
     font-family: 'Cooper Hewitt';
     color: var(--light-grey);
-    font-size: 1.4rem;
+    font-size: clamp(15px, .9vw + .1rem, 20px);
     letter-spacing: 1px;
     line-height: 2rem;
 }
@@ -506,8 +508,8 @@ main {
 .texto_sobreMi {
     color: var(--light-grey);
     font-family: 'Cooper Hewitt';
-    font-size: 1.5rem;
-    letter-spacing: .1rem;
+    font-size: clamp(15px, 1vw + .2rem, 30px);
+    letter-spacing: .2rem;
     white-space: pre-line;
     text-align: justify;
     line-height: 2.2rem;
@@ -530,28 +532,22 @@ main {
 /* Habilidades */
 .carousel {
     overflow: hidden;
+    max-width: 950px;
     width: 60vw;
     height: auto;
-    margin: 2rem auto 8rem;
-    display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    margin: 1rem auto 8rem;
 }
 .carousel-track {
-    grid-area: 1 / 2 / 2 / 11;
-    width: calc(120px * 16);
+    width: calc(120px * 15);
     display: flex;
     flex-direction: row;
-    animation: scroll 50s linear infinite;
-    -webkit-animation: scroll 50s linear infinite;
+    animation: scroll 30s linear infinite;
+    -webkit-animation: scroll 30s linear infinite;
 }
 .carousel-track:nth-child(2) {
-    grid-area: 2 / 2 / 6 / 11;
     flex-direction: row-reverse;
-    animation: scroll 50s linear reverse infinite;
-    -webkit-animation: scroll 50s linear reverse infinite;
+    animation: scroll 25s linear reverse infinite;
+    -webkit-animation: scroll 25s linear reverse infinite;
 }
 .carousel-item {
     width: 120PX;
@@ -569,6 +565,7 @@ main {
     object-fit: cover;
     filter: saturate(0%);
 }
+
 /* Animación del carrusel */
 @keyframes scroll {
     0% {
@@ -581,6 +578,7 @@ main {
 
 .carousel-item img:hover {
     filter: saturate(80%);
+    filter: drop-shadow(0 0 5px var(--white));
 }
 
 /* Formación */
@@ -596,8 +594,10 @@ main {
     color: var(--white);
     font-family: 'Cooper Hewitt';
     font-size: 2.4rem;
+    font-weight: 600;
     letter-spacing: .1rem;
     padding: 5rem 0 3rem 0;
+    margin: 0 0 2rem 0;
 }
 
 .cards_container--formacion {
@@ -609,26 +609,33 @@ main {
 .cards--formacion {
     min-width: 25rem;
     width: 20%;
-    height: 30rem;
+    height: 25rem;
     padding: 1rem;
     border-radius: 30px;
-    border: 1px solid #17243a;
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: border 0.3s;
-    object-fit: cover;
 }
 
-.cards--formacion img {
+.container-img-formacion {
     width: 100%;
-    height: 65%;
+    height: 60%;
+    object-fit: cover;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-img-formacion img {
+    height: 100%;
     max-width: 20rem;
 }
 
 .container_texto--formacion {
     width: 100%;
-    height: 35%;
+    height: 40%;
     margin-bottom: 1.3rem;
     text-align: center;
 }

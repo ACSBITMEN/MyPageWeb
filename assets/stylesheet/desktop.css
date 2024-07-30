@@ -74,17 +74,6 @@ div.btn {
     margin-top: 6rem;
 }
 
-.home_text-1 {
-    font-size: 3.5rem;
-    margin-left: .4rem;
-    font-weight: bold;
-}
-
-.home_text-2 {
-    font-size: 6rem;
-    font-weight: bold;
-    color: var(--white);
-}
 
 .home_text-3 {
     margin: 0 0 2rem 0;
@@ -138,8 +127,6 @@ div.btn {
 
 .texto_sobreMi {
     text-align: start;
-    font-size: clamp(15px, 1vw + .2rem, 30px);
-    letter-spacing: .2rem;
     line-height: 2.8rem;
 }
 
