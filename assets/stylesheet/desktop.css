@@ -111,18 +111,8 @@ div.btn {
 
 /* Sobre Mí */
 
-.sobreMi {
-    height: auto;
-}
-
 .sobreMi h1 {
     font-size: 3rem;
-}
-
-.title_sobreMi {
-    text-align: start;
-    font-size: 2.8rem;
-    letter-spacing: .3rem;
 }
 
 .texto_sobreMi {

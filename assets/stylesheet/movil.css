@@ -25,11 +25,6 @@ nav.nav_menu.active {
   justify-content: center;
   align-items: center;
 }
-.home_text-1 {
-  display: none;
-  margin-right: 1rem;
-  font-size: 2.4rem;
-}
 .home_text-2 {
   font-size: 3.6rem;
 }
@@ -61,13 +56,33 @@ nav.nav_menu.active {
 }
 
 .container_content-sobreMi {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .container_texto-sobreMi {
-  padding: 4rem;
+  width: 100%;
+  padding: 2rem;
+}
+
+.container_texto-sobreMi {
+  width: 100%;
+  max-width: 80rem;
+}
+
+.container_image-sobreMi {
+  min-width: 27rem;
+  width: 100%;
+  max-width: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_image-sobreMi img {
+  max-width: 40rem;
 }
 
 .title_sobreMi {
