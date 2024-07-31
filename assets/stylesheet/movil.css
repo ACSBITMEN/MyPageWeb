@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+
+nav.nav_menu.active {
+  width: 50%;
+  margin-left: 50%;
+  top: 5.9rem;
+}
+
+/* Home */
+.home {
+  display: block;
+  width: 100%;
+}
+.image_home {
+  min-width: 36rem;
+}
+.container_text-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home_text-2 {
+  font-size: 3.6rem;
+}
+
+.container_parrafo-info {
+  display: none;
+}
+
+.contact_button {
+  display: none;
+}
+
+.links {
+  position: static;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+/* Sobre mi */
+.sobreMi {
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container_content-sobreMi {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container_texto-sobreMi {
+  width: 100%;
+  padding: 2rem;
+}
+
+.container_texto-sobreMi {
+  width: 100%;
+  max-width: 80rem;
+}
+
+.container_image-sobreMi {
+  min-width: 27rem;
+  width: 100%;
+  max-width: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_image-sobreMi img {
+  max-width: 40rem;
+}
+
+.title_sobreMi {
+  font-size: 3rem;
+}
+
+.texto_sobreMi {
+  line-height: 2.5rem;
+}
+
+.container_image-sobreMi {
+  margin-top: 2rem;
+}
+
+
+/* Habilidades */
+.carousel {
+  width: 90vw;
+}
+
+/* Formación */
+
+.cards_container--formacion {
+  flex-direction: row;
+}
+
+.cards--formacion {
+  margin: 0 2rem 3rem 2rem;
+}
+
+
+/* Contacto */
+.container--contacto {
+  margin: 0 auto;
+  width: 80%;
+}

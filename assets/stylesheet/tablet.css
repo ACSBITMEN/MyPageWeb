@@ -8,8 +8,24 @@ nav.nav_menu.active {
 
 /* Home */
 
+.home {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.container_image-home {
+    grid-area: 1 / 2 / 2 / 12;
+}
+
 .image_home {
-    max-width: 50rem;
+    object-fit: contain;
+}
+
+.home_info {
+    grid-area: 2 / 2 / 3 / 12;
 }
 
 .container_text-info {
@@ -18,68 +34,47 @@ nav.nav_menu.active {
     align-items: center;
 }
 
-.home_text-1 {
-    margin-right: 1rem;
-    font-size: 2.4rem;
-}
-
 .home_text-2 {
     font-size: 3.6rem;
 }
 
-/* Sobre mi */
-
-.sobreMi {
-    padding: 0 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.container_parrafo-info p {
+    font-family: 'Cooper Hewitt';
+    color: var(--light-grey);
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    line-height: 2rem;
 }
 
+/*sobre Mi*/
 .container_content-sobreMi {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 80%;
 }
 
 .container_texto-sobreMi {
-    padding: 4rem;
-}
-
-.title_sobreMi {
-    font-size: 3rem;
-}
-
-.texto_sobreMi {
-    font-size: 1.8rem;
-    line-height: 2.5rem;
+    width: 100%;
+    max-width: 80rem;
 }
 
 .container_image-sobreMi {
-    width: 65%;
-    margin-top: 2rem;
+    min-width: 27rem;
+    width: 100%;
+    max-width: none;
+    display: flex;
+    padding: 5rem 0 0 0;
+    justify-content: center;
+    align-items: center;
 }
+
+.container_image-sobreMi img {
+    max-width: 40rem;
+}
+
+
+/* Formacion */
+
 
 /* Habilidades */
-
-.cards_container--habilidades {
-    column-gap: 4rem;
-}
-
-/* Formación */
-
-.cards_container--formacion {
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.cards--formacion {
-    margin: 0 2rem 3rem 2rem;
-}
-
-
-/* Contacto */
-.container--contacto {
-    margin: 0 auto;
-    width: 80%;
+.carousel {
+    width: 76vw;
 }

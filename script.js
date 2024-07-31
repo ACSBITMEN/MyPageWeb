@@ -84,3 +84,18 @@ document.querySelector('.go-top-container').addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
+/*===== Clonar items del Carrusel Infinito =====*/
+document.addEventListener("DOMContentLoaded", function () {
+    const tracks = document.querySelectorAll('.carousel-track');
+    
+    tracks.forEach(track => {
+        const items = Array.from(track.children);
+        
+        items.forEach(item => {
+            const clone = item.cloneNode(true);
+            track.appendChild(clone);
+        });
+    });
+});
+
