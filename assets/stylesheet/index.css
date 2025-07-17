@@ -205,7 +205,6 @@ span+span {
         transform: rotate(45deg);
     }
 }
-
 @keyframes top-2 {
     0% {
         top: .8rem;
@@ -220,7 +219,6 @@ span+span {
         transform: rotate(0deg);
     }
 }
-
 @keyframes bottom {
     0% {
         bottom: 0;
@@ -235,7 +233,6 @@ span+span {
         transform: rotate(135deg);
     }
 }
-
 @keyframes bottom-2 {
     0% {
         bottom: .8rem;
@@ -250,7 +247,6 @@ span+span {
         transform: rotate(0);
     }
 }
-
 @keyframes scaled {
     50% {
         transform: scale(0);
@@ -259,7 +255,6 @@ span+span {
         transform: scale(0);
     }
 }
-
 @keyframes scaled-2 {
     0% {
         transform: scale(0);
@@ -304,7 +299,6 @@ main {
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    padding-bottom: 4rem;
     height: 100vh;
 }
 
@@ -642,6 +636,18 @@ main {
         transform: translateX(-50%);
     }
 }
+/*animacion Flotar*/
+@keyframes float-Element {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
 
 .carousel-item img:hover {
     filter: saturate(80%);
@@ -666,9 +672,9 @@ main {
 }
 
 .card {
-    background-color: var(--background-space);
+    background-color: rgb(95, 95, 95);
     border-radius: 20px;
-    min-width: 33rem;
+    min-width: 25rem;
     max-width: 38rem;
     height: 45rem;
     box-shadow: 0 10px 16px -6px rgb(5 5 5 / 30%), 0 25px 10px -24px rgb(5 5 5 / 10%);
@@ -676,23 +682,7 @@ main {
     transition: transform 0.2s;
 }
 
-.cards_container--proyectos .card:hover {
-    transform: scale(1.05);
-    border: 1px solid var(--main-color);
-    animation: float-Element 3s ease-in-out infinite;
-}
 
-@keyframes float-Element {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-8px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
 
 .card .container-img-proyectos {
     width: 100%;
@@ -798,6 +788,7 @@ main {
     background-color: var(--background-space-two);
     width: 100%;
     height: auto;
+    height: 75rem;
     padding: 0 2rem 5rem 2rem;
 }
 
