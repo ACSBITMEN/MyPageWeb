@@ -1,13 +1,7 @@
+/*  Todos los titulos sin especificar */
+
+
 /* Header */
-
-.header {
-    justify-content: space-between;
-    padding: .8rem 3rem;
-    z-index: 2;
-}
-
-
-
 nav.nav_menu a {
     font-size: 1.6rem;
     padding: .5rem;
@@ -111,10 +105,6 @@ div.btn {
 
 /* Sobre Mí */
 
-.sobreMi h1 {
-    font-size: 3rem;
-}
-
 .texto_sobreMi {
     text-align: start;
     line-height: 2.8rem;
@@ -126,17 +116,7 @@ div.btn {
 
 /* Formación */
 
-.formacion h1 {
-    padding-top: 8rem;
-    font-size: 3rem;
-}
-
 /* Proyectos */
-
-.proyectos h1 {
-    padding-top: 8rem;
-    font-size: 3rem;
-}
 
 
 .cards_container--proyectos {
@@ -155,11 +135,6 @@ div.btn {
 }
 
 /* Contacto */
-
-.contacto h1 {
-    padding: 8rem 0 2.5rem 0;
-    font-size: 3rem;
-}
 
 .container_box--contacto {
     margin-top: 2rem;
