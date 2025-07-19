@@ -99,3 +99,51 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+/*===== Clonar items del Carrusel Proyectos =====*/
+
+document.addEventListener("DOMContentLoaded", () => {
+    const track = document.querySelector(".carousel-track-proyectos");
+    const cards = document.querySelectorAll(".carousel-track-proyectos .card-externa");
+    const prevBtn = document.getElementById("btn-prev");
+    const nextBtn = document.getElementById("btn-next");
+
+    let currentIndex = 0;
+    let cardsToShow = getCardsToShow(); // dinámico según pantalla
+
+    function getCardsToShow() {
+        const width = window.innerWidth;
+        if (width <= 500) return 1;        // móvil
+        if (width <= 979) return 2;        // tablet
+        return 3;                          // desktop
+    }
+
+    function updateCarousel() {
+        cardsToShow = getCardsToShow(); // recalcular al redimensionar
+        const cardWidth = cards[0].getBoundingClientRect().width;
+        track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    }
+
+    nextBtn.addEventListener("click", () => {
+        currentIndex++;
+        if (currentIndex > cards.length - cardsToShow) {
+            currentIndex = 0;
+        }
+        updateCarousel();
+    });
+
+    prevBtn.addEventListener("click", () => {
+        currentIndex--;
+        if (currentIndex < 0) {
+            currentIndex = cards.length - cardsToShow;
+        }
+        updateCarousel();
+    });
+
+    window.addEventListener("resize", () => {
+        updateCarousel();
+    });
+
+    updateCarousel(); // inicial
+});
+

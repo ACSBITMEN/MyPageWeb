@@ -292,7 +292,7 @@ main {
 
 /***************************************************************/
 
-/* HOME */
+/* SECCION HOME */
 
 .home {
     display: grid;
@@ -302,14 +302,15 @@ main {
     grid-row-gap: 0;
     height: 90vh;
 }
-
+/* Contenedor Imagen principal */
 .container_image-home {
     height: auto;
     display: flex;
     justify-content: center;
     padding: 12rem 0 5rem 0;
+    border: 2px solid red; /* <<< ------- MARCADOR */
 }
-
+/* Imagen principal */
 .image_home {
     max-width: 65%;
     transition: .4s;
@@ -326,13 +327,14 @@ main {
         transform: translateY(0);
     }
 }
-
+/* Contenedor Texto principal */
 .home_info {
     grid-area: 1 / 3 / 2 / 7;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    border: 2px solid red; /* <<< ------- MARCADOR */
 }
 
 
@@ -673,27 +675,91 @@ main {
 .proyectos {
     width: 100%;
     height: auto;
-    padding: 5rem 1rem 1rem 1rem;
+    padding: 5rem 5rem 1rem 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cards_container--proyectos {
-    background-color: var(--background-space);
+    max-width: 1300px;
     margin-bottom: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    
 }
 
-.card {
-    background-color: rgb(95, 95, 95);
-    border-radius: 20px;
-    min-width: 10rem;
-    max-width: 30rem;
+.carousel-track-container {
+    overflow: hidden;
+    max-width: 100%;
+    display: flex;
+    margin: 0 1rem;
+}
+
+.carousel-track-proyectos {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-btn {
+    background: rgba(255, 255, 255, 0.178);
+    border: none;
+    font-size: 2rem;
+    color: var(--main-color);
+    cursor: pointer;
+    z-index: 2;
+    height: 30%;
+    border-radius: 3px;
+    border: 1px solid #ffffff;
+}
+
+.carousel-btn:hover {
+    background: rgba(255, 255, 255, 0.178);
+    border: 1px solid var(--main-color);
+}
+
+.carousel-btn.left {
+    position: absolute;
+    left: 0;
+    padding: 0 5px 0 3px;
+}
+
+.carousel-btn.right {
+    position: absolute;
+    right: 0;
+    padding: 0 3px 0 5px;
+}
+
+.cards_container--proyectos .card-externa {
+    flex: 0 0 calc(100% / 3); /* Mostrar 3 cartas */
+    display: flex;
+    justify-content: center;
+}
+
+.cards_container--proyectos .card {
+    background-color: rgb(126, 122, 122);
+    max-width: 420px;
     height: 45rem;
+    margin: 0 5px;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     box-shadow: 0 10px 16px -6px rgb(5 5 5 / 30%), 0 25px 10px -24px rgb(5 5 5 / 10%);
-    margin: 1rem 2rem;
     transition: transform 0.2s;
+    box-sizing: border-box;
 }
 
 .card .container-img-proyectos {
@@ -703,8 +769,8 @@ main {
 }
 
 .card .card-img-top {
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -736,15 +802,15 @@ main {
 }
 
 .container_btn--proyectos {
-    height: 5rem;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    border: 2px solid red; /* <<< --- Marcardor */
 }
 
 .container_btn--proyectos a{
     text-decoration: none;
     display: inline-block;
-    margin: 0 1.5rem;
 }
 
 .container_btn--proyectos button {
@@ -752,21 +818,22 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 15.8rem;
+    min-width: 1rem;
     letter-spacing: .1rem;
     font-weight: bold;
     cursor: pointer;
+    border: 2px solid red; /* <<< --- Marcardor */
 }
 
 .btn_demo {
-    padding: .9rem 0;
+    padding: 0;
     border: none;
     background-color: var(--main-color);
     color: var(--background-space);
 }
 
 .btn_repo {
-    padding: .8rem 0;
+    padding: 0;
     background: none;
     color: var(--main-color);
     border: 1px solid var(--main-color);
