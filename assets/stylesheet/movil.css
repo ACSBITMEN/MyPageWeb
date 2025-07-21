@@ -137,7 +137,19 @@ nav.nav_menu.active {
 }
 
 .cards_container--proyectos .card {
+  width: 67%;
+  margin: 0;
+}
+
+
+.container_btn--proyectos {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container_btn--proyectos button {
+  padding: 5px auto 3px;
   margin: 0;
 }
 

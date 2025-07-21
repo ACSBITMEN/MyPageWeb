@@ -23,6 +23,8 @@ html::-webkit-scrollbar-thumb {
 ::selection {
     background-color: #9bfc7d48;
 }
+
+
 /*Variables de Paleta de colores para el Tema de la pagina*/
 :root {
     --main-color: #FFEB00; /*c8ff00  00ffbf*/
@@ -681,6 +683,9 @@ main {
     align-items: center;
 }
 
+
+
+
 .carousel-wrapper {
     position: relative;
     width: 100%;
@@ -722,7 +727,7 @@ main {
     z-index: 2;
     height: 30%;
     border-radius: 3px;
-    border: 1px solid #ffffff;
+    border: 1px solid #ffffff98;
 }
 
 .carousel-btn:hover {
@@ -748,12 +753,13 @@ main {
     justify-content: center;
 }
 
-.cards_container--proyectos .card {
-    background-color: rgb(126, 122, 122);
-    max-width: 420px;
+.cards_container--proyectos .card-externa .card {
+    background-color: #ffffffb2;
+    color: #000;
+    max-width: 370px;
     height: 45rem;
     margin: 0 5px;
-    border-radius: 9px;
+    border-radius: 6px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -762,10 +768,19 @@ main {
     box-sizing: border-box;
 }
 
+.cards_container--proyectos .card-externa .card:hover {
+    background-color: hsla(0, 0%, 100%, 0.8);
+    transition: transform 5s;
+}
+
+.cards_container--proyectos .card-externa .card:hover h3{
+    background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgb(190, 190, 190) 100%);
+    transition: transform 5s;
+}
+
 .card .container-img-proyectos {
     width: 100%;
     height: 22rem;
-    margin-bottom: 1rem;
 }
 
 .card .card-img-top {
@@ -777,88 +792,84 @@ main {
 }
 
 .container_textCard--proyectos {
-    height: 15rem;
-    padding: 0 2rem;
-    margin-bottom: 2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .container_textCard--proyectos h3 {
+    background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(219, 219, 219, 1) 100%);
+    border-bottom: 1px solid gray;
+    padding: 3px 0;
     font-family: 'Cooper Hewitt';
     letter-spacing: .1rem;
-    font-size: 1.8rem;
-    color: var(--white);
+    font-size: 2rem;
     font-weight: bold;
     display: inline;
     cursor: default;
+    text-align: center;
 }
 
 .container_textCard--proyectos p {
-    color: var(--white);
     font-family: 'Cooper Hewitt';
     letter-spacing: .1rem;
     font-size: 1.4rem;
     margin-top: 1rem;
+    padding: 0 2rem;
     cursor: default;
 }
 
 .container_btn--proyectos {
+    height: auto;
+    width: 100%;
+    padding: 0;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    border: 2px solid red; /* <<< --- Marcardor */
+    justify-content: center;
 }
 
 .container_btn--proyectos a{
+    width: 50%;
     text-decoration: none;
     display: inline-block;
 }
 
 .container_btn--proyectos button {
-    border-radius: 1rem;
+    background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(219, 219, 219, 1) 100%);
+    background: linear-gradient(180deg,rgba(110, 110, 110, 0.5) 0%, rgb(0, 0, 0, 0.5) 100%);
+    color: #fff;
+    border-radius: 0 0 0 5px;
+    width: 100%;
+    padding: 10px 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 1rem;
     letter-spacing: .1rem;
     font-weight: bold;
     cursor: pointer;
-    border: 2px solid red; /* <<< --- Marcardor */
+    border: 1px solid rgb(129, 129, 129);
 }
 
-.btn_demo {
-    padding: 0;
-    border: none;
-    background-color: var(--main-color);
-    color: var(--background-space);
+.container_btn--proyectos .btn_repo {
+    border-radius: 0 0 5px 0;
 }
 
-.btn_repo {
-    padding: 0;
-    background: none;
-    color: var(--main-color);
-    border: 1px solid var(--main-color);
+.container_btn--proyectos i {
+    font-size: 3rem;
+    color: white;
+    width: 50px;
+    height: 30px;
 }
 
-.btn_demo img {
-    width: 2rem;
-    margin-right: .8rem;
+
+.container_btn--proyectos button:hover {
+    background: linear-gradient(180deg,rgba(110, 110, 110, 0.5) 0%, rgb(0, 0, 0, 0.5) 100%);
+    border: 1px solid yellow
 }
 
-.container_btn--proyectos .btn_demo:hover {
-    background: #776254;
-    box-shadow: 0px 13px 33px -14px rgba(0,0,0,0.75);
-    transition: all .4s ease;
-}
-
-.btn_repo img {
-    width: 2rem;
-    margin-right: .8rem;
-}
-
-.container_btn--proyectos .btn_repo:hover {
-    background: var(--black);
-    box-shadow: 0px 13px 33px -14px rgba(0,0,0,0.75);
-    transition: all .4s ease;
+.container_btn--proyectos button:hover, .container_btn--proyectos button:hover i {
+    color: yellow;
 }
 
 /***************************************************************/
