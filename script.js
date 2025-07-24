@@ -6,7 +6,7 @@ const flagsElement = document.getElementById('flags');
 const textsToChange = document.querySelectorAll('[data-section]');
 window.proyectos = [
     {
-    titulo: "Pokedex Pokemon",
+    titulo: "⚡ Pokedex Pokemon",
     descripcion: "La Pokédex es una aplicación web interactiva que te permite explorar y obtener información detallada sobre diferentes Pokémon. Consume la API de Pokémon para mostrar datos precisos y actualizados sobre cada especie de Pokémon.",
     imagen: "./assets/images/project-Pokedex.png",
     alt: "Proyecto: Pokedex",
@@ -14,9 +14,29 @@ window.proyectos = [
     repo: "https://github.com/ACSBITMEN/Pokemon-App.git",
     dataValueTitle: "title-proyecto1",
     dataValueInfo: "info-proyecto1"
-},
-{
-    titulo: "Calendario",
+    },
+    {
+    titulo: "🚷 Login Access (Front)",
+    descripcion: "Aplicación frontend desarrollada con React, Vite, y Axios que proporciona una interfaz de usuario para la autenticación y gestión de usuarios (CRUD).",
+    imagen: "https://raw.githubusercontent.com/ACSBITMEN/Login-Frontend/main/public/Readme-Login.gif",
+    alt: "Proyecto: Virtual ATM",
+    demo: "#",
+    repo: "https://github.com/ACSBITMEN/Login-Frontend",
+    dataValueTitle: "title-proyecto3",
+    dataValueInfo: "info-proyecto3"
+    },
+    {
+    titulo: "👾 Snake Game",
+    descripcion: "Este es un juego clásico Snake Game 🐍🍎🍐 desarrollado con HTML, CSS y JavaScript y está disponible en línea mediante GitHub Pages. El reto es hacer la mayor puntuación posible comiendo frutas sin tocar los bordes o a ti mismo.",
+    imagen: "https://raw.githubusercontent.com/ACSBITMEN/Snake-Game/refs/heads/main/assets/preview-page/Preview2.png",
+    alt: "Proyecto: Virtual ATM",
+    demo: "https://acsbitmen.github.io/Snake-Game/",
+    repo: "https://github.com/ACSBITMEN/Snake-Game",
+    dataValueTitle: "title-proyecto4",
+    dataValueInfo: "info-proyecto4"
+    },
+    {
+    titulo: "📅 Calendario",
     descripcion: "Calendario interactivo y dinámico desarrollado con HTML, CSS y JavaScript, que muestra los festivos y eventos especiales de Colombia. Además, cuenta con imágenes y citas para cada mes, y una paleta de colores personalizada que cambia mensualmente.",
     imagen: "https://raw.githubusercontent.com/ACSBITMEN/Calendario-Personalizable/refs/heads/main/assets/view/view1.png",
     alt: "Proyecto: Clon de Pinterest",
@@ -26,28 +46,8 @@ window.proyectos = [
     dataValueInfo: "info-proyecto2"
     },
     {
-    titulo: "Login Access (Front)",
-    descripcion: "Aplicación frontend desarrollada con React, Vite, y Axios que proporciona una interfaz de usuario para la autenticación y gestión de usuarios (CRUD).",
-    imagen: "https://raw.githubusercontent.com/ACSBITMEN/Login-Frontend/main/public/Readme-Login.gif",
-    alt: "Proyecto: Virtual ATM",
-    demo: "https://acsbitmen.github.io/Cajero-Automatico/",
-    repo: "https://github.com/ACSBITMEN/Cajero-Automatico.git",
-    dataValueTitle: "title-proyecto3",
-    dataValueInfo: "info-proyecto3"
-    },
-    {
-    titulo: "Snake Game",
-    descripcion: "Este es un juego clásico 👾 Snake Game 🐍🍎🍐 desarrollado con HTML, CSS y JavaScript y está disponible en línea mediante GitHub Pages.",
-    imagen: "https://raw.githubusercontent.com/ACSBITMEN/Snake-Game/refs/heads/main/assets/preview-page/Preview2.png",
-    alt: "Proyecto: Virtual ATM",
-    demo: "https://acsbitmen.github.io/Snake-Game/",
-    repo: "https://github.com/ACSBITMEN/Snake-Game",
-    dataValueTitle: "title-proyecto4",
-    dataValueInfo: "info-proyecto4"
-    },
-    {
-    titulo: "Calculadora",
-    descripcion: "Desarrollada con HTML, CSS y JavaScript este es una  calculadora web 📱 con dos excelentes temas: en modo oscuro 🌚 y modo claro 🌝.",
+    titulo: "📱 Calculadora",
+    descripcion: "Desarrollada con HTML, CSS y JavaScript este es una  calculadora web con dos excelentes temas: en modo oscuro y modo claro.",
     imagen: "https://raw.githubusercontent.com/ACSBITMEN/Calculadora/refs/heads/main/assets/img/view2.png",
     alt: "Proyecto: Virtual ATM",
     demo: "https://acsbitmen.github.io/Calculadora/",
