@@ -37,12 +37,16 @@
 
     "proyectos": {
         "title": "Proyectos",
-        "title-proyecto1": "Clon de Pinterest",
-        "info-proyecto1": "El proyecto es un homenaje a la popular plataforma Pinterest, diseñado para ofrecerte la misma experiencia intuitiva y cautivadora que tanto nos gusta del layout de imagenes de esta facinante página web",
-        "title-proyecto2": "Virtual ATM",
-        "info-proyecto2": "Experimenta la simulación de un cajero interactivo mediante HTML, CSS y JS. Consulta, retira e ingresa saldos y disfruta de una experiencia financiera envolvente.",
-        "title-proyecto3": "Pokedex Pokemon",
-        "info-proyecto3": "La Pokédex es una aplicación web interactiva que Consume la API de Pokémon y te permite explorar y obtener información detallada, precisa y actualizada sobre cada Pokémon."
+        "title-proyecto1": "⚡ Pokedex Pokemon",
+        "info-proyecto1": "La Pokédex es una aplicación web interactiva que te permite explorar y obtener información detallada sobre diferentes Pokémon. Consume la API de Pokémon para mostrar datos precisos y actualizados sobre cada especie de Pokémon.",
+        "title-proyecto2": "🚷 Control de Acceso (Front)",
+        "info-proyecto2": "Aplicación frontend desarrollada con React, Vite, y Axios que proporciona una interfaz de usuario para la autenticación y gestión de usuarios (CRUD = Crear, Leer, Actualizar y Borrar).",
+        "title-proyecto3": "👾 Juego de la Serpiente",
+        "info-proyecto3": "Este es un juego clásico Snake Game 🐍🍎🍐 desarrollado con HTML, CSS y JavaScript y está disponible en línea mediante GitHub Pages. El reto es hacer la mayor puntuación posible comiendo frutas sin tocar los bordes o a ti mismo.",
+        "title-proyecto4": "📅 Calendario",
+        "info-proyecto4": "Calendario interactivo y dinámico desarrollado con HTML, CSS y JavaScript, que muestra los festivos y eventos especiales de Colombia. Además, cuenta con imágenes y citas para cada mes, y una paleta de colores personalizada que cambia mensualmente.",
+        "title-proyecto5": "📱 Calculadora",
+        "info-proyecto5": "Desarrollada con HTML, CSS y JavaScript este es una  calculadora web con dos excelentes temas: en modo oscuro y modo claro."
     },
 
     "contacto": {

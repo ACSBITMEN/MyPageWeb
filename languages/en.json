@@ -13,7 +13,7 @@
         "home_text-3": "Full - Stack Web Developer",
         "parrafo-info": "Systems engineering and programming student guided to excellence in Full Stack Web Development. Passionate about technology and development, focused on creating ingenious, innovative and aesthetic projects that provide the best experience to users and companies.",
         "cv_button": "Download CV",
-        "contact_button": "ontact me"
+        "contact_button": "Contact me"
     },
 
     "sobre-mi": {
@@ -37,12 +37,16 @@
 
     "proyectos": {
         "title": "Projects",
-        "title-proyecto1": "Pinterest clone",
-        "info-proyecto1": "The project is a tribute to the popular Pinterest platform, designed to give you the same intuitive and engaging experience that we love so much about the image design of this fascinating website.",
-        "title-proyecto2": "Virtual ATM",
-        "info-proyecto2": "Experience an interactive ATM simulation using HTML, CSS and JS. Check, withdraw and enter balances and enjoy an immersive financial experience.",
-        "title-proyecto3": "Pokedex Pokemon",
-        "info-proyecto3": "The Pokédex is an interactive web application that consumes the Pokémon API and allows you to explore and obtain detailed, accurate and up-to-date information about each Pokémon."
+        "title-proyecto1": "⚡ Pokedex Pokemon",
+        "info-proyecto1": "The Pokédex is an interactive web application that allows you to explore and obtain detailed information about different Pokémon. It uses the Pokémon API to display accurate and up-to-date data about each species.",
+        "title-proyecto2": "🚷 Login Access (Front)",
+        "info-proyecto2": "Frontend application developed with React, Vite and Axios that provides a user interface for authentication and user management (Create, Read, Update and Delete).",
+        "title-proyecto3": "👾 Snake Game",
+        "info-proyecto3": "This is a classic snake game 🐍🍎🍐 developed with HTML, CSS, and JavaScript, and available online through GitHub Pages. The challenge is to get the highest score possible by eating fruit without touching the edges or yourself.",
+        "title-proyecto4": "📅 Calendar",
+        "info-proyecto4": "An interactive and dynamic calendar developed with HTML, CSS, and JavaScript, showing Colombian holidays and special events. It also includes monthly images and quotes, and a customizable color palette that changes monthly.",
+        "title-proyecto5": "📱 Calculator",
+        "info-proyecto5": "Developed with HTML, CSS and JavaScript, this is a web calculator with two excellent themes: dark mode and light mode."
     },
 
     "contacto": {
