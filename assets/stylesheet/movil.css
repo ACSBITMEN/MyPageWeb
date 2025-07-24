@@ -114,6 +114,45 @@ nav.nav_menu.active {
 }
 
 
+/* Proyectos */
+
+.proyectos {
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.cards_container--proyectos {
+  width: 100%;
+}
+
+.carousel-track-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.cards_container--proyectos .card-externa {
+  flex: 0 0 calc(100% / 1); /* Mostrar 1 cartas */
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards_container--proyectos .card {
+  width: 67%;
+  margin: 0;
+}
+
+
+.container_btn--proyectos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container_btn--proyectos button {
+  padding: 5px auto 3px;
+  margin: 0;
+}
+
 /* Contacto */
 .container--contacto {
   margin: 0 auto;

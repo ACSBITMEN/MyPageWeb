@@ -3,7 +3,7 @@
 
 /* Header */
 nav.nav_menu a {
-    font-size: 1.6rem;
+    font-size: 2em;
     padding: .5rem;
     color: var(--white);
     font-family: 'Cooper Hewitt';
@@ -68,7 +68,6 @@ div.btn {
     margin-top: 6rem;
 }
 
-
 .home_text-3 {
     margin: 0 0 2rem 0;
     font-size: 1.8rem;
@@ -110,10 +109,6 @@ div.btn {
     line-height: 2.8rem;
 }
 
-/* Habilidades */
-
-
-
 /* Formación */
 
 /* Proyectos */
@@ -129,7 +124,6 @@ div.btn {
 }
 
 .container_btn--proyectos button {
-    width: auto;
     padding-left: 3.5rem;
     padding-right: 3.5rem;
 }
