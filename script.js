@@ -3,7 +3,7 @@ const sectionAll = document.querySelectorAll('section[id]');
 const inputName = document.querySelector('#nombre');
 const inputEmail = document.querySelector('#email');
 const flagsElement = document.getElementById('flags');
-const textsToChange = document.querySelectorAll('[data-section]');
+
 window.proyectos = [
     {
     titulo: "⚡ Pokedex Pokemon",
@@ -16,24 +16,24 @@ window.proyectos = [
     dataValueInfo: "info-proyecto1"
     },
     {
-    titulo: "🚷 Login Access (Front)",
-    descripcion: "Aplicación frontend desarrollada con React, Vite, y Axios que proporciona una interfaz de usuario para la autenticación y gestión de usuarios (CRUD).",
+    titulo: "🚷 Control de Acceso (Front)",
+    descripcion: "Aplicación frontend desarrollada con React, Vite, y Axios que proporciona una interfaz de usuario para la autenticación y gestión de usuarios (Crear, Leer, Actualizar y Borrar).",
     imagen: "https://raw.githubusercontent.com/ACSBITMEN/Login-Frontend/main/public/Readme-Login.gif",
     alt: "Proyecto: Virtual ATM",
     demo: "#",
     repo: "https://github.com/ACSBITMEN/Login-Frontend",
-    dataValueTitle: "title-proyecto3",
-    dataValueInfo: "info-proyecto3"
+    dataValueTitle: "title-proyecto2",
+    dataValueInfo: "info-proyecto2"
     },
     {
-    titulo: "👾 Snake Game",
+    titulo: "👾 Juego de la Serpiente",
     descripcion: "Este es un juego clásico Snake Game 🐍🍎🍐 desarrollado con HTML, CSS y JavaScript y está disponible en línea mediante GitHub Pages. El reto es hacer la mayor puntuación posible comiendo frutas sin tocar los bordes o a ti mismo.",
     imagen: "https://raw.githubusercontent.com/ACSBITMEN/Snake-Game/refs/heads/main/assets/preview-page/Preview2.png",
     alt: "Proyecto: Virtual ATM",
     demo: "https://acsbitmen.github.io/Snake-Game/",
     repo: "https://github.com/ACSBITMEN/Snake-Game",
-    dataValueTitle: "title-proyecto4",
-    dataValueInfo: "info-proyecto4"
+    dataValueTitle: "title-proyecto3",
+    dataValueInfo: "info-proyecto3"
     },
     {
     titulo: "📅 Calendario",
@@ -42,8 +42,8 @@ window.proyectos = [
     alt: "Proyecto: Clon de Pinterest",
     demo: "https://acsbitmen.github.io/Calendario-Personalizable/",
     repo: "https://github.com/ACSBITMEN/Calendario-Personalizable",
-    dataValueTitle: "title-proyecto2",
-    dataValueInfo: "info-proyecto2"
+    dataValueTitle: "title-proyecto4",
+    dataValueInfo: "info-proyecto4"
     },
     {
     titulo: "📱 Calculadora",
@@ -52,8 +52,8 @@ window.proyectos = [
     alt: "Proyecto: Virtual ATM",
     demo: "https://acsbitmen.github.io/Calculadora/",
     repo: "https://github.com/ACSBITMEN/Calculadora",
-    dataValueTitle: "title-proyecto4",
-    dataValueInfo: "info-proyecto4"
+    dataValueTitle: "title-proyecto5",
+    dataValueInfo: "info-proyecto5"
     }
 ];
 
@@ -87,22 +87,7 @@ btn.addEventListener('click', function() {
     }
 });
 
-/*===== Cambio de idioma =====*/
-const changeLanguage = async language => {
-    const requestJson = await fetch(`./languages/${language}.json`);
-    const texts = await requestJson.json();
 
-    for(const textToChange of textsToChange) {
-        const section = textToChange.dataset.section;
-        const value = textToChange.dataset.value;
-
-        textToChange.innerHTML = texts[section][value];
-    }
-}
-
-flagsElement.addEventListener('click', (e) => {
-    changeLanguage(e.target.parentElement.dataset.language);
-})
 
 /*===== class active por secciones =====*/
 window.addEventListener('scroll', () => {
@@ -244,6 +229,22 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+/*===== Cambio de idioma =====*/
+const changeLanguage = async language => {
+    const requestJson = await fetch(`./languages/${language}.json`);
+    const texts = await requestJson.json();
 
+    const textsToChange = document.querySelectorAll('[data-section]');
 
+    for(const textToChange of textsToChange) {
+        const section = textToChange.dataset.section;
+        const value = textToChange.dataset.value;
+
+        textToChange.innerHTML = texts[section][value];
+    }
+}
+
+flagsElement.addEventListener('click', (e) => {
+    changeLanguage(e.target.parentElement.dataset.language);
+})
 
